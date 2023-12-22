@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+  color: white;
+}
+body {
+  background-image: url(img/aurea-montanha.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: block;
+  position: fixed;
+  bottom: 30%;
+  left: 45%;
+}
+.box-2 {
+  display: flex;
+  position: absolute;
+  width: 400px;
+  margin-left: 3px;
+}
+
+.life-aurea {
+  font-weight: 400;
+  display: flex;
+  margin-top: 90px;
+  margin-left: 10px;
+}
+
+.container {
+  height: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-left: -15px;
+}
+
+.animated-word {
+  display: block;
+  font-family: "poppins";
+  letter-spacing: 0.4em;
+  font-weight: light;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  max-width: 300px;
+  width: 100%;
+  outline: 3px solid;
+  outline-color: rgba(253, 253, 253, 0.5);
+  outline-offset: 25px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+  color: rgba(255, 255, 255, 0.7);
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 60px;
+}
+
+.logo-pequena {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: 90px;
+  margin-left: 10px;
+}
+
+.text-qualidade {
+  width: 150px;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: none;
+  }
+
+  .logo-mobile {
+    width: 100vw;
+    display: block;
+    height: 100vh;
+  }
+  .container {
+    margin: auto;
+    align-items: center;
+    margin-left: -60px;
+  }
+  .animated-word {
+    display: block;
+    font-size: 20px;
+    margin: auto;
+  }
+
+  .box-2 {
+    margin-left: -60px;
+  }
+}

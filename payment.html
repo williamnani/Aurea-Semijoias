@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="stylesheet" href="loja.html" />
+    <link rel="stylesheet" href="loja2.html" />
+    <link rel="shortcut icon" href="img/faviconn.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=EB+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;700&family=Montserrat:wght@400;500;600;700;900&family=Oswald&family=Plus+Jakarta+Sans:wght@600&family=Poppins:wght@200;500;700;800&family=Roboto:wght@300;400&family=Sono:wght@200;300;400;500&family=Unna&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Áurea Semijoias</title>
+  </head>
+  <body>
+       <hr class="first-line" />
+    <header class="headerr">
+            <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu<span class="hamburger"></span>
+        </button>
+
+     <ul class="menu" id="menu" role="menu"> 
+        <li><a href="loja.html" class="menu-title">Home</a></li>
+        <li><a href="#contacto" class="menu-title">Contato</a></li>
+        <li><a href="about.html#sobrenos" class="menu-title">Sobre nós</a></li>
+        <li hidden> <a href="#class-aneis" class="menu-joias">Anéis</a></li>
+        <li hidden> <a href="loja.html#brincos" class="menu-joias">Brincos</a></li>
+        <li hidden> <a href="loja.html#colares" class="menu-joias">Colares</a></li>
+        <li hidden> <a href="#" class="menu-joias">Pulseiras</a></li>
+        <li hidden><a href="#lancamento" class="menu-joias">Lançamentos</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="box3">
+      <img src="assets/logo-principal (1).png" alt="" class="logo-capa" />
+    </div>
+
+    <!-- pagamento -->
+
+    <div class="checkout-panel">
+      <div class="panel-body">
+        <h2 class="title" id="check">Checkout here!</h2>
+
+        <div class="progress-bar">
+          <div class="step active"></div>
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+        <div class="payment-method">
+          <label for="card" class="method card">
+            <div class="card-logos">
+              <img
+                src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png" class="img-visa"
+              />
+              <img
+                src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png" class="img-master" 
+              />
+            </div>
+
+            <div class="radio-input">
+              <input id="card" type="radio" name="payment" />
+              Pay AU$20.99 with credit card
+            </div>
+          </label>
+
+          <label for="paypal" class="method paypal">
+            <img
+              src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png" class="img-paypal"
+            />
+            <div class="radio-input">
+              <input id="paypal" type="radio" name="payment" />
+              Pay AU$20.99 with PayPal
+            </div>
+          </label>
+        </div>
+
+        <div class="input-fields">
+          <div class="column-1">
+            <label for="cardholder">Name</label>
+            <input type="text" id="cardholder" />
+
+            <div class="small-inputs">
+              <div>
+                <label for="date">Valid date</label>
+                <input type="text" id="date" />
+              </div>
+
+              <div>
+                <label for="verification">CVV / CVC *</label>
+                <input type="password" id="verification" />
+              </div>
+            </div>
+          </div>
+          <div class="column-2">
+            <label for="cardnumber">Card Number</label>
+            <input type="password" id="cardnumber" />
+
+            <span class="info"
+              >* CVV or CVC is the card security code, unique three digits
+              number on the back of your card separate from its number.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-footer">
+        <button class="btn back-btn">Back</button>
+        <button class="btn next-btn">Next Step</button>
+      </div>
+    </div>
+
+     <footer class="footer">
+          <img src="aneis/logo-transparente.png" alt="" class="logo-transparente">
+          <div class="sociais-links">
+            <p class="text-life">Life by Áurea</p>
+          <a href="https://www.google.com" class="social-link" ><i class="fa-brands fa-instagram" ></i></a>
+          <a href="https://www.google.com" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.google.com" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.google.com" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </footer>
+       
+          <div class="footer-contact" id="contacto">
+            <div class="box-11">
+            <h2 class="box-contato">Atendimento</h2>
+            <p class="text-fone"><i class="fa-solid fa-phone"></i>Tel: +55 (51)995599555</p>
+            <a href="https://www.google.com" class="text-mail"><i class="fa-regular fa-envelope"></i>Email: Aurea2023@aurea.com</a>
+            <p class="text-horario"><i class="fa-regular fa-clock"></i>09h às 18h | seg à qui09h às 17h | sex</p>
+          </div>
+    
+          <div class="box-pagamento">
+            <h2 class="text-pag">Pagamento e Segurança</h2>
+            <img src="band/bandeiras3 (1).png" alt="" class="pag-band">
+            <img src="band/selo-ssl.png" alt="" class="pag-selo">
+          </div>
+          </div>
+
+
+
+  </body>
+  <script src="menu.js"></script>
+</html>
+

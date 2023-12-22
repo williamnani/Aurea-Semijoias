@@ -1,0 +1,840 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", monospace;
+  scroll-behavior: smooth;
+  color: rgb(0, 0, 0);
+}
+
+.first-line {
+  width: 100vw;
+  height: 15px;
+  background-color: rgb(228, 162, 162);
+}
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+header,
+.menu-joias,
+.menu-title {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: rgb(116, 116, 116);
+}
+.menu-title {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.menu-title:hover {
+  padding: 4px 11px;
+  background: rgb(228, 162, 162);
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: white;
+}
+
+.logo-capa {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+/* pagamento */
+
+.checkout-panel {
+  display: flex;
+  margin: auto;
+  margin-top: -50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 940px;
+  height: 766px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.panel-body {
+  padding: 45px 80px 0;
+  flex: 1;
+}
+
+.title {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #2e2e2e;
+}
+
+.progress-bar {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.step {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 30px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-color: #efefef;
+}
+
+.step:after {
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 22px;
+  width: 225px;
+  height: 6px;
+  content: "";
+  background-color: #efefef;
+}
+
+.step:before {
+  color: #2e2e2e;
+  position: absolute;
+  top: 40px;
+}
+
+.step:last-child:after {
+  content: none;
+}
+
+.step.active {
+  background-color: rgb(228, 162, 162);
+}
+.step.active:after {
+  background-color: rgb(228, 162, 162);
+}
+.step.active:before {
+  color: rgb(228, 162, 162);
+}
+.step.active + .step {
+  background-color: rgb(228, 162, 162);
+}
+.step.active + .step:before {
+  color: rgb(228, 162, 162);
+}
+
+.step:nth-child(1):before {
+  content: "Cart";
+}
+.step:nth-child(2):before {
+  right: -40px;
+  content: "Confirmation";
+}
+.step:nth-child(3):before {
+  right: -30px;
+  content: "Payment";
+}
+.step:nth-child(4):before {
+  right: 0;
+  content: "Finish";
+}
+.payment-method {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+  width: 382px;
+  height: 122px;
+  padding-top: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: rgb(249, 249, 249);
+  justify-content: center;
+  align-items: center;
+}
+
+.card-logos {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-input {
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+}
+.input-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-fields label {
+  display: block;
+  margin-bottom: 10px;
+  color: #b4b4b4;
+}
+
+.info {
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+  margin-top: 50px;
+  opacity: 0.5;
+  color: #2e2e2e;
+}
+
+div[class*="column"] {
+  width: 382px;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  padding-right: 40px;
+  padding-left: 16px;
+  color: rgba(46, 46, 46, 0.8);
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: rgb(228, 162, 162);
+}
+
+#date {
+  background: url(img/icons_calendar_black.png) no-repeat 95%;
+}
+#cardholder {
+  background: url(img/icons_person_black.png) no-repeat 95%;
+}
+#cardnumber {
+  background: url(img/icons_card_black.png) no-repeat 95%;
+}
+#verification {
+  background: url(img/icons_lock_black.png) no-repeat 95%;
+}
+
+.small-inputs {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.small-inputs div {
+  width: 182px;
+}
+.panel-footer {
+  display: flex;
+  width: 100%;
+  height: 96px;
+  padding: 0 80px;
+  background-color: rgb(239, 239, 239);
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  font-size: 16px;
+  width: 163px;
+  height: 48px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 23px;
+}
+
+.back-btn {
+  color: rgb(228, 162, 162);
+  background: #fff;
+  border: solid 1px rgb(228, 162, 162);
+}
+
+.next-btn {
+  color: #fff;
+  background: rgb(228, 162, 162);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+.blue-border {
+  border: 1px solid rgb(110, 178, 251);
+}
+.warning {
+  border-color: #1abc9c;
+}
+
+:root {
+  font-size: 16px;
+  --royal-blue-light: #404eed;
+  --royal-blue-dark: #3946d4;
+  --white: #fff;
+  --backgroud: #e2e3e9;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.logo-footer {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  position: relative;
+  margin-left: -100px;
+  margin-top: 100px;
+}
+
+.footer {
+  width: 100vw;
+  height: 200px;
+  background: rgb(228, 162, 162);
+  margin-top: 200px;
+}
+
+.logo-transparente {
+  width: 250px;
+  display: flex;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;
+  margin-left: 60px;
+}
+
+.text-life {
+  color: white;
+  font-family: "poppins";
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  margin-top: -20px;
+}
+
+.sociais-links {
+  margin-left: 136px;
+  margin-top: 20px;
+}
+
+.social-link > i {
+  display: inline-flex;
+  justify-content: center;
+  color: #777777;
+  margin-left: 15px;
+  align-items: center;
+  font-size: 25px;
+}
+
+.social-link > i:hover {
+  color: white;
+  transition: ease-in-out 0.2s;
+  font-size: 30px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -180px;
+  gap: 200px;
+  margin-right: 130px;
+}
+
+.box11 {
+  display: flex;
+}
+
+.box-contato {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.text-fone {
+  color: #ffffff;
+  font-family: "poppins";
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.text-fone > i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #747474;
+}
+
+.text-mail {
+  color: #ffffff;
+  font-family: "poppins";
+  text-decoration: none;
+}
+
+.text-mail > i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #747474;
+}
+
+.text-horario {
+  margin-top: 7px;
+  color: white;
+}
+
+.text-horario > i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #747474;
+}
+.box-pagamento {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-pag {
+  color: white;
+}
+
+.pag-band {
+  width: 300px;
+  margin-top: 7px;
+}
+
+.pag-selo {
+  width: 160px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.btn-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: rgb(228, 162, 162);
+    text-align: center;
+    width: 100vw;
+    height: 0;
+    z-index: 10;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    margin-top: -100px;
+    padding-top: 0px;
+  }
+
+  .menu:hover {
+    transition: ease-out 0.5s;
+  }
+
+  .first-line {
+    width: 100vw;
+    height: 80px;
+  }
+
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.651);
+    border-radius: 0;
+    font-size: 25px;
+    color: white;
+    font-family: "montserrat";
+    transition: ease-in-out 0.8s;
+  }
+
+  .menu li {
+    margin-top: 30px;
+  }
+
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    cursor: pointer;
+    margin-top: -90px;
+    font-family: "montserrat";
+  }
+
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+    margin-top: -0px;
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+  }
+
+  .nav.active .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+    transition: 0.8s;
+  }
+
+  .nav.active .hamburger {
+    border-top-color: transparent;
+    transition: 0.8s;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .list-joias li {
+    width: 300px;
+    display: block;
+    position: relative;
+    column-count: 2;
+    margin-top: -20px;
+    margin-bottom: -60px;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: -10px;
+  }
+
+  .list-joias .menu-joias {
+    text-align: center;
+    justify-content: center;
+    line-height: 1;
+    font-size: 17px;
+  }
+
+  .underline {
+    display: none;
+  }
+
+  .logo-capa {
+    margin-top: 80px;
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .first-rec {
+    width: 100vw;
+  }
+
+  .title,
+  .progress-bar {
+    margin-left: 15px;
+  }
+
+  .checkout-panel {
+    display: block;
+    width: 80vw;
+    margin-left: -75px;
+    box-shadow: none;
+    text-decoration: none;
+    box-shadow: none;
+    list-style: none;
+    border: none;
+    color: white;
+  }
+
+  .payment-method {
+    width: 360px;
+    padding-left: 11px;
+  }
+
+  .progress-bar {
+    display: flex;
+    width: 290px;
+  }
+
+  .step.active:before {
+    font-size: 13px;
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+
+  .step::before {
+    display: flex;
+    font-size: 13px;
+    margin-right: 5px;
+  }
+
+  .img-visa {
+    width: 50px;
+    margin-left: 30px;
+  }
+  .img-paypal {
+    margin-right: -50px;
+  }
+
+  .step:after {
+    width: 100px;
+  }
+
+  .img-master {
+    width: 30px;
+    margin-right: 50px;
+  }
+
+  .img-paypal {
+    width: 70px;
+    margin-left: -50px;
+  }
+
+  .radio-input {
+    padding-left: 0px;
+    color: #000000;
+    font-size: 12px;
+    width: 140px;
+    padding-left: -70px;
+  }
+
+  .input-fields {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  #cardholder {
+    width: 90%;
+  }
+
+  #date {
+    width: 90%;
+  }
+
+  .method {
+    margin-right: -30px;
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+
+  #verification {
+    width: 80%;
+    margin-left: -10px;
+  }
+
+  #cardnumber {
+    width: 80%;
+  }
+
+  .payment-method {
+    margin-left: 10px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .column-1 {
+    margin-left: 15px;
+    width: 340px !important;
+  }
+
+  .column-2 {
+    margin-left: 15px;
+    width: 340px !important;
+  }
+
+  .panel-footer {
+    margin-top: 10px;
+    margin-left: 110px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .back-btn {
+    width: 110px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .next-btn {
+    width: 110px;
+    font-size: 13px;
+  }
+
+  .footer {
+    display: block;
+    margin-top: 180px;
+  }
+
+  .logo-transparente {
+    display: block;
+    padding-top: 20px;
+    width: 120px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    right: 20px;
+  }
+
+  .sociais-links {
+    display: block;
+    margin-left: 0px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    right: 20px;
+    margin-top: 150px;
+    text-decoration: none;
+  }
+
+  .social-link > i {
+    font-size: 15px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .text-life {
+    margin-top: -90px;
+    font-size: 12px;
+    margin-bottom: 70px;
+    margin-left: 25px;
+  }
+
+  .footer-contact {
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 0px;
+  }
+
+  .box-contato {
+    font-size: 15px;
+    margin-top: -180px;
+  }
+
+  .text-horario,
+  .text-fone,
+  .text-mail {
+    font-size: 13px;
+    padding-bottom: 5px;
+  }
+
+  .text-mail > i {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  .text-fone > i {
+    font-size: 15px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .text-horario > i {
+    font-size: 15px;
+  }
+
+  .pag-selo {
+    display: none;
+    margin-left: -200px;
+    width: 90px;
+    margin-top: -65px;
+    margin-bottom: -2px;
+  }
+
+  .pag-band {
+    display: none;
+    width: 170px;
+    margin-left: -210px;
+  }
+
+  .text-pag {
+    display: none;
+  }
+
+  .box-11 {
+    margin-left: -80px;
+    display: block;
+    width: 225px;
+    height: auto;
+  }
+
+  .social-link > i:hover {
+    display: none;
+    text-decoration: none;
+  }
+
+  .list-joias {
+    display: none;
+  }
+
+  [hidden] {
+    display: block;
+  }
+}
