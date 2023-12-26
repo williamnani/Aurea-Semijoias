@@ -1,20 +1,16 @@
 <img alt="Projeto Aurea" src="assets/aurea-montanha-removebg-preview.png" width="100%">
-
 <p align="center">
 Ecommerce exclusivo de semijoias 
 </p>
-
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
-
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
-
 
 <p align="center">
   <img alt="Projeto aurea" src="assets/Beige New Product Mockup Now Available Facebook Post (2)-PhotoRoom.png-PhotoRoom.png" width="100%">
