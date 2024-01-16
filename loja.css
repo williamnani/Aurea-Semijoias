@@ -1045,7 +1045,7 @@ span {
     font-family: "montserrat";
   }
 
-  .hamburger {
+  .brr {
     border-top: 0.125rem solid;
     width: 1.25rem;
     margin-top: 20px;
@@ -1053,8 +1053,8 @@ span {
     color: #ffffff;
   }
 
-  .hamburger::after,
-  .hamburger::before {
+  .brr::after,
+  .brr::before {
     content: " ";
     display: block;
     width: 1.25rem;
@@ -1071,16 +1071,16 @@ span {
     transition: 0.8s;
   }
 
-  .nav.active .hamburger {
+  .nav.active .brr {
     border-top-color: transparent;
     transition: 0.8s;
   }
 
-  .nav.active .hamburger::before {
+  .nav.active .brr::before {
     transform: rotate(135deg);
   }
 
-  .nav.active .hamburger::after {
+  .nav.active .brr::after {
     transform: rotate(-135deg);
     top: -0.4375rem;
   }
